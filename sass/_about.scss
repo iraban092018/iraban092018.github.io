@@ -9,10 +9,10 @@
     justify-items: center;
     grid-row-gap: 2rem;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-small) {
         grid-column: 1 / -1;
     }
-
+    
     &__list {
         display: grid;
         grid-template-columns: min-content max-content;
@@ -30,7 +30,7 @@
     }
 
     &__img {
-        width: 5rem;
+        width: 4rem;
         display: block;
     }
 

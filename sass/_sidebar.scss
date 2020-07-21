@@ -32,6 +32,13 @@
         cursor: pointer;
         left: 0.5rem;
         top: 1rem;
+        @media only screen and (max-width: $bp-large) {
+            margin-top: 0;
+            margin-right: 3rem;
+    
+            &::before { transform: translateY(-1.2rem); }
+            &::after { transform: translateY(1rem); }
+        }
         @media only screen and (max-width: $bp-medium) {
             top: 4rem;
             right: 4rem;

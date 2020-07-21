@@ -1,17 +1,22 @@
 .skills{
     background-color: $color-grey-light-1;
     display: grid;
-    grid-column: col-start 7/full-end;
+    grid-column: col-end 4/center-end;
     align-content: center;
     align-items: center;
     justify-content: center;
     @media only screen and (max-width: $bp-medium) {
         grid-column: 1 / -1;
         grid-row: 5 / 6;
+        justify-content: flex-start;
+    }
+    @media only screen and (max-width: $bp-small){
+        justify-content: flex-start;
     }
 }
 
 .skill {
+    
 
     &__industry {
         background-color: $color-grey-dark-1;
