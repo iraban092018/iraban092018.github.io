@@ -306,6 +306,11 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem; }
+  @media only screen and (max-width: 50em) {
+    .personal {
+      grid-column: 1 / -1;
+      grid-row: 4 / 5;
+      padding: 2rem; } }
   .personal__description {
     display: grid; }
     .personal__description--category {
@@ -360,7 +365,8 @@ body {
   @media only screen and (max-width: 50em) {
     .learning {
       grid-column: 1 / -1;
-      padding: 6rem; } }
+      grid-row: 7 / 8;
+      padding: 2rem; } }
 
 .subject {
   float: left;
@@ -423,11 +429,11 @@ body {
   @media only screen and (max-width: 50em) {
     .skills {
       grid-column: 1 / -1;
-      grid-row: 5 / 6;
+      grid-row: 6 / 7;
       justify-content: flex-start; } }
   @media only screen and (max-width: 37.5em) {
     .skills {
-      justify-content: flex-start; } }
+      padding: 2rem; } }
 
 .skill__industry {
   background-color: #54483A;

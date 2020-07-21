@@ -5,6 +5,12 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 7rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+        padding: 2rem;
+    }
+
     &__description{
         display: grid;
         &--category {
