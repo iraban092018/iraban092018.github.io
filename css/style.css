@@ -344,7 +344,7 @@ body {
 
 .learning {
   background-color: #f9f7f6;
-  grid-column: center-start / col-end 4; }
+  grid-column: center-start / col-end 5; }
   @supports (display: grid) {
     .learning {
       display: grid;
@@ -410,7 +410,7 @@ body {
 .skills {
   background-color: #f9f7f6;
   display: grid;
-  grid-column: col-end 4/center-end;
+  grid-column: col-end 5/center-end;
   align-content: center;
   align-items: center;
   justify-content: center; }
