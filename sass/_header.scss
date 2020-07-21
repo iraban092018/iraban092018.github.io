@@ -1,0 +1,59 @@
+.header {
+    background-color: $color-grey-dark-1;
+    grid-column: full-start / col-end 6;
+    background-image: url(../img/Arnab_Background.JPG);
+    background-size: cover;
+    background-position: center;
+    padding: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 0;
+
+    display: grid;
+    grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+    grid-template-columns: minmax(min-content, max-content);
+    grid-row-gap: 1.5rem;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem;
+    }
+
+    &__name {
+        display: grid;
+        grid-row: 5 / -1;
+        grid-column-gap: 1.5rem;
+        align-items: start;
+        margin: -15rem 0;
+        font-size: 1.6rem;
+        color: $color-grey-light-2;
+
+        img {
+            width: 20rem;
+            height: 20rem;
+            border-radius: 50%;
+            display: block;
+        }
+
+
+    }
+
+    &__grid {
+        height: 3rem;
+        justify-self: center;
+    }
+
+    &__btn {
+        align-self: start;
+        justify-self: start;
+    }
+&__text{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-grey-dark-1;
+}
+
+}

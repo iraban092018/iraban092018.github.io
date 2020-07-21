@@ -1,0 +1,26 @@
+.project {
+   
+    &__current {
+        background-color: $color-grey-light-1;
+        grid-column: full-start / full-end;
+        grid-row: 3/ -1;
+        display: grid;
+        &--wrapper{
+            margin:2rem;
+        }
+        
+        
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1 / -1;
+            grid-row: 5 / 6;
+        }
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-bottom: 4rem;
+        color:$color-grey-dark-1;
+        font-weight: 400;
+    }
+}

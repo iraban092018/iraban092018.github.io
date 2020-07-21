@@ -1,0 +1,58 @@
+.learning {
+    
+    grid-column: center-start / col-end 6;
+    margin: 15rem 0;
+
+    @supports(display: grid) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
+        grid-gap: 4rem;
+        align-items: flex-start;
+    }
+
+}
+
+.subject {
+    float: left;
+    width: 33.3333%;
+    margin-bottom: 6rem;
+
+    @supports(display: grid) {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 2.5rem;
+
+    &__icon {
+        fill: $color-primary;
+        width: 4.5rem;
+        height: 4.5rem;
+        grid-row: 1 / span 2;
+        transform: translateY(-1rem);
+    }
+
+    &__text {
+        font-size: 1.7rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        font-size: 1.4rem;
+        color: $color-primary;
+        text-decoration: none;
+        font-family: $font-display;
+        text-transform: uppercase;
+        display: block;
+        transition: all .2s;
+    }
+
+    &__link:hover,
+    &__link:active {
+        background-color: rgba(#fff, .05);
+        transform: translateY(-3px);
+    }
+}

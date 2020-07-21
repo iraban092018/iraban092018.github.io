@@ -1,0 +1,45 @@
+.skills{
+    background-color: $color-grey-light-1;
+    display: grid;
+    grid-column: col-start 7/full-end;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+    }
+}
+
+.skill {
+
+    &__industry {
+        background-color: $color-grey-dark-1;
+        display: grid;
+        grid-column: full-start / col-end 4;
+        padding: 2rem;
+
+    }
+
+    &__technology {
+        background-color: $color-grey-dark-1;
+        display: grid;
+        grid-column: col-start 5 / full-end;
+        padding: 2rem;
+    }
+
+    &__text {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        align-items: center;
+        list-style: none;
+        color:$color-grey-dark-1;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        font-style: italic;
+        margin-bottom: 4rem;
+
+
+    }
+
+}
