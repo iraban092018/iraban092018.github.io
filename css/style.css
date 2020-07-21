@@ -293,6 +293,12 @@ body {
   .about__img {
     width: 4rem;
     display: block; }
+  .about__text {
+    margin-top: -3px;
+    max-width: 15rem;
+    font-size: 1.5rem;
+    color: #aaa;
+    margin-top: -3px; }
 
 .personal {
   grid-column: center-start / center-end;
