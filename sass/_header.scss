@@ -31,6 +31,12 @@
         font-size: 1.6rem;
         color: $color-grey-light-2;
 
+        @media only screen and 
+        (min-width: $bp-small) and
+        (max-width:$bp-medium) {
+           margin: -20rem 0;
+        }
+
         img {
             width: 20rem;
             height: 20rem;
