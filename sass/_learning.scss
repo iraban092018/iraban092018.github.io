@@ -1,7 +1,8 @@
 .learning {
     background-color: $color-grey-light-1;
     grid-column: center-start / col-end 5;
-
+    padding: 2rem;
+    margin: 2rem 0;
     @supports(display: grid) {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
@@ -11,7 +12,8 @@
     @media only screen and (max-width: $bp-medium) {
         grid-column: 1 / -1;
         grid-row: 7 / 8;
-        padding: 2rem;
+        padding: 4rem;
+        margin: 2rem;
     }
 }
 

@@ -1,15 +1,18 @@
 .personal {
+    background-color: $color-grey-light-1;
     grid-column: center-start / center-end;
     margin: 15rem 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 7rem;
-
+    padding: 2rem;
     @media only screen and (max-width: $bp-medium) {
         grid-column: 1 / -1;
         grid-row: 4 / 5;
-        padding: 2rem;
+       
+        margin: 2rem;;
     }
+   
 
     &__description{
         display: grid;

@@ -304,16 +304,18 @@ body {
     margin-top: -3px; }
 
 .personal {
+  background-color: #f9f7f6;
   grid-column: center-start / center-end;
   margin: 15rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 7rem; }
+  grid-gap: 7rem;
+  padding: 2rem; }
   @media only screen and (max-width: 50em) {
     .personal {
       grid-column: 1 / -1;
       grid-row: 4 / 5;
-      padding: 2rem; } }
+      margin: 2rem; } }
   .personal__description {
     display: grid; }
     .personal__description--category {
@@ -358,7 +360,9 @@ body {
 
 .learning {
   background-color: #f9f7f6;
-  grid-column: center-start / col-end 5; }
+  grid-column: center-start / col-end 5;
+  padding: 2rem;
+  margin: 2rem 0; }
   @supports (display: grid) {
     .learning {
       display: grid;
@@ -369,7 +373,8 @@ body {
     .learning {
       grid-column: 1 / -1;
       grid-row: 7 / 8;
-      padding: 2rem; } }
+      padding: 4rem;
+      margin: 2rem; } }
 
 .subject {
   float: left;
@@ -413,7 +418,8 @@ body {
   @media only screen and (max-width: 50em) {
     .project__current {
       grid-column: 1 / -1;
-      grid-row: 5 / 6; } }
+      grid-row: 5 / 6;
+      margin: 2rem; } }
 
 .project__text {
   font-size: 1.5rem;
@@ -428,7 +434,9 @@ body {
   grid-column: col-end 5/center-end;
   align-content: center;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin: 2rem;
+  padding: 2rem; }
   @media only screen and (max-width: 50em) {
     .skills {
       grid-column: 1 / -1;
@@ -436,7 +444,7 @@ body {
       justify-content: flex-start; } }
   @media only screen and (max-width: 37.5em) {
     .skills {
-      padding: 2rem; } }
+      padding: 5rem; } }
 
 .skill__industry {
   background-color: #54483A;
